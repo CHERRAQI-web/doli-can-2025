@@ -1,0 +1,15 @@
+2025-11-19T01:29:05+00:00 DEBUG #8850 - [New Request] GET /wp-admin/plugins.php
+2025-11-19T01:29:06+00:00 DEBUG #8850 - Webhook lock acquired for 'unregister'.
+2025-11-19T01:29:06+00:00 DEBUG #8850 - Webhook operation 'unregister' started.
+2025-11-19T01:29:07+00:00 DEBUG #8850 - GET https://api.woocommerce.com/integrations/ppc/v1/notifications/webhooks
+Response: Array
+(
+    [code] => 404
+    [message] => Not Found
+)
+
+Response Body: {"statusCode":404,"error":"Not Found","message":"Not Found"}
+
+2025-11-19T01:29:08+00:00 ERROR #8850 - Failed to delete webhooks: [Erreur] Not Found
+2025-11-19T01:29:08+00:00 INFO #8850 - Webhooks deleted.
+2025-11-19T01:29:09+00:00 DEBUG #8850 - Webhook lock released for 'unregister'.
