@@ -1,0 +1,81 @@
+/*
+Theme Name: Aino
+Theme URI: https://ainoblocks.io
+Author: elmastudio
+Author URI: https://www.elmastudio.de/en/
+Description: Aino is a Full Site Editing block theme for the WordPress block editor. In combination with the Aino Blocks plugin you can easily create advanced page layouts using Aino's pre-designed block patterns. Create a unique online shop, business website, portfolio or personal blog with Aino and stand out from the crowd.
+Requires at least: 5.9
+Tested up to: 6.0.1
+Requires PHP: 7.0
+Version: 2.6.6
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
+Text Domain: aino
+Tags: blog, block-styles, e-commerce, grid-layout, one-column, two-columns, three-columns, four-columns, featured-images, full-width-template, theme-options, custom-colors, custom-menu, custom-logo, editor-style, sticky-post, translation-ready, threaded-comments, wide-blocks, block-patterns, full-site-editing
+
+Aino Theme, (C) 2022 Elmastudio Ltd.
+Aino is distributed under the terms of the GNU GPL.
+*/
+
+/* Note: The CSS files are loaded from assets/build/css/ folder. */
+
+.wp-block-ik-tis-countdown-block {
+  background-color: #F5F2F5; 
+  border: 1px solid #D9D9D9; 
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  max-width: 600px; 
+  margin: 2rem auto; 
+}
+
+.wp-block-ik-tis-countdown-block .ik-tis-countdown-digits {
+  font-family: var(--wp--preset--font-family--heading-font);
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--wp--preset--color--primary-dark);
+  line-height: 1.2;
+}
+
+.wp-block-ik-tis-countdown-block .ik-tis-countdown-item {
+  color: var(--wp--preset--color--foreground);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.wp-block-ik-tis-countdown-block .ik-tis-countdown-item:not(:last-child)::after {
+  content: '|';
+  color: var(--wp--preset--color--accent);
+  margin: 0 0.5rem;
+}
+
+
+.wp-block-ik-tis-countdown-block .wp-block-button__link {
+  background-color: var(--wp--preset--color--primary-dark);
+  color: var(--wp--preset--color--background);
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .wp-block-ik-tis-countdown-block .ik-tis-countdown-digits {
+    font-size: 2rem;
+  }
+  
+  .wp-block-ik-tis-countdown-block .ik-tis-countdown-item {
+    display: block;
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+  
+  .wp-block-ik-tis-countdown-block .ik-tis-countdown-item:not(:last-child)::after {
+    display: none;
+  }
+}
+  .wp-block-ainoblocks-card .ik-tis-countdown-item:not(:last-child)::after {
+    display: none;
+  }
+}
