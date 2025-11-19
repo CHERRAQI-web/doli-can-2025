@@ -1,0 +1,451 @@
+[01-Nov-2025 22:04:07 UTC] PHP Warning:  Undefined array key "" in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-content\plugins\countdown-builder\assets\views\generalOptions.php on line 79
+[01-Nov-2025 22:04:27 UTC] PHP Warning:  Undefined array key "" in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-content\plugins\countdown-builder\assets\views\generalOptions.php on line 79
+[01-Nov-2025 22:06:00 UTC] PHP Warning:  Undefined array key "" in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-content\plugins\countdown-builder\assets\views\generalOptions.php on line 79
+[01-Nov-2025 22:06:07 UTC] PHP Warning:  Undefined array key "" in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-content\plugins\countdown-builder\assets\views\generalOptions.php on line 79
+[01-Nov-2025 22:09:59 UTC] PHP Warning:  Undefined array key "" in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-content\plugins\countdown-builder\assets\views\generalOptions.php on line 79
+[01-Nov-2025 22:12:06 UTC] PHP Warning:  Undefined array key "" in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-content\plugins\countdown-builder\assets\views\generalOptions.php on line 79
+[01-Nov-2025 22:12:48 UTC] PHP Warning:  Undefined array key "" in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-content\plugins\countdown-builder\assets\views\generalOptions.php on line 79
+[01-Nov-2025 22:14:42 UTC] PHP Warning:  Undefined array key "" in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-content\plugins\countdown-builder\assets\views\generalOptions.php on line 79
+[01-Nov-2025 22:25:05 UTC] PHP Warning:  Undefined array key "" in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-content\plugins\countdown-builder\assets\views\generalOptions.php on line 79
+[01-Nov-2025 23:10:57 UTC] PHP Warning:  Undefined array key "" in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-content\plugins\countdown-builder\assets\views\generalOptions.php on line 79
+[01-Nov-2025 23:13:12 UTC] PHP Warning:  Undefined array key "" in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-content\plugins\countdown-builder\assets\views\generalOptions.php on line 79
+[01-Nov-2025 23:13:17 UTC] PHP Warning:  Undefined array key "" in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-content\plugins\countdown-builder\assets\views\generalOptions.php on line 79
+[01-Nov-2025 23:17:58 UTC] PHP Warning:  Undefined array key "" in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-content\plugins\countdown-builder\assets\views\generalOptions.php on line 79
+[01-Nov-2025 23:19:32 UTC] PHP Warning:  Undefined array key "" in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-content\plugins\countdown-builder\assets\views\generalOptions.php on line 79
+[01-Nov-2025 23:19:32 UTC] PHP Warning:  Undefined array key "" in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-content\plugins\countdown-builder\assets\views\generalOptions.php on line 79
+[01-Nov-2025 23:20:09 UTC] PHP Warning:  Undefined array key "" in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-content\plugins\countdown-builder\assets\views\generalOptions.php on line 79
+[01-Nov-2025 23:20:14 UTC] PHP Warning:  Undefined array key "" in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-content\plugins\countdown-builder\assets\views\generalOptions.php on line 79
+[01-Nov-2025 23:20:18 UTC] PHP Warning:  Undefined array key "" in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-content\plugins\countdown-builder\assets\views\generalOptions.php on line 79
+[02-Nov-2025 11:34:07 UTC] Cron reschedule event error for hook: wp_privacy_delete_old_export_files, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"hourly","args":[],"interval":3600}
+[02-Nov-2025 23:10:21 UTC] WordPress database error Table 'wp_woocommerce_sessions' already exists for query 
+CREATE TABLE wp_woocommerce_sessions (
+  session_id bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  session_key char(32) NOT NULL,
+  session_value longtext NOT NULL,
+  session_expiry bigint(20) unsigned NOT NULL,
+  PRIMARY KEY  (session_id),
+  KEY session_expiry (session_expiry),
+  UNIQUE KEY session_key (session_key)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables, dbDelta
+[02-Nov-2025 23:10:22 UTC] WordPress database error Table 'wp_woocommerce_api_keys' already exists for query 
+CREATE TABLE wp_woocommerce_api_keys (
+  key_id bigint(20) unsigned NOT NULL auto_increment,
+  user_id bigint(20) unsigned NOT NULL,
+  description varchar(200) NULL,
+  permissions varchar(10) NOT NULL,
+  consumer_key char(64) NOT NULL,
+  consumer_secret char(43) NOT NULL,
+  nonces longtext NULL,
+  truncated_key char(7) NOT NULL,
+  last_access datetime NULL default null,
+  PRIMARY KEY  (key_id),
+  KEY consumer_key (consumer_key),
+  KEY consumer_secret (consumer_secret)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables, dbDelta
+[02-Nov-2025 23:10:24 UTC] WordPress database error Table 'wp_woocommerce_attribute_taxonomies' already exists for query 
+CREATE TABLE wp_woocommerce_attribute_taxonomies (
+  attribute_id bigint(20) unsigned NOT NULL auto_increment,
+  attribute_name varchar(200) NOT NULL,
+  attribute_label varchar(200) NULL,
+  attribute_type varchar(20) NOT NULL,
+  attribute_orderby varchar(20) NOT NULL,
+  attribute_public int(1) NOT NULL DEFAULT 1,
+  PRIMARY KEY  (attribute_id),
+  KEY attribute_name (attribute_name(20))
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables, dbDelta
+[02-Nov-2025 23:10:27 UTC] WordPress database error Table 'wp_woocommerce_downloadable_product_permissions' already exists for query 
+CREATE TABLE wp_woocommerce_downloadable_product_permissions (
+  permission_id bigint(20) unsigned NOT NULL auto_increment,
+  download_id varchar(36) NOT NULL,
+  product_id bigint(20) unsigned NOT NULL,
+  order_id bigint(20) unsigned NOT NULL DEFAULT 0,
+  order_key varchar(200) NOT NULL,
+  user_email varchar(200) NOT NULL,
+  user_id bigint(20) unsigned NULL,
+  downloads_remaining varchar(9) NULL,
+  access_granted datetime NOT NULL default '0000-00-00 00:00:00',
+  access_expires datetime NULL default null,
+  download_count bigint(20) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY  (permission_id),
+  KEY download_order_key_product (product_id,order_id,order_key(16),download_id),
+  KEY download_order_product (download_id,order_id,product_id),
+  KEY order_id (order_id),
+  KEY user_order_remaining_expires (user_id,order_id,downloads_remaining,access_expires)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables, dbDelta
+[02-Nov-2025 23:10:29 UTC] WordPress database error Table 'wp_woocommerce_order_items' already exists for query 
+CREATE TABLE wp_woocommerce_order_items (
+  order_item_id bigint(20) unsigned NOT NULL auto_increment,
+  order_item_name text NOT NULL,
+  order_item_type varchar(200) NOT NULL DEFAULT '',
+  order_id bigint(20) unsigned NOT NULL,
+  PRIMARY KEY  (order_item_id),
+  KEY order_id (order_id)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables, dbDelta
+[02-Nov-2025 23:10:31 UTC] WordPress database error Table 'wp_woocommerce_order_itemmeta' already exists for query 
+CREATE TABLE wp_woocommerce_order_itemmeta (
+  meta_id bigint(20) unsigned NOT NULL auto_increment,
+  order_item_id bigint(20) unsigned NOT NULL,
+  meta_key varchar(255) default NULL,
+  meta_value longtext NULL,
+  PRIMARY KEY  (meta_id),
+  KEY order_item_id (order_item_id),
+  KEY meta_key (meta_key(32))
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables, dbDelta
+[02-Nov-2025 23:10:33 UTC] WordPress database error Table 'wp_woocommerce_tax_rates' already exists for query 
+CREATE TABLE wp_woocommerce_tax_rates (
+  tax_rate_id bigint(20) unsigned NOT NULL auto_increment,
+  tax_rate_country varchar(2) NOT NULL DEFAULT '',
+  tax_rate_state varchar(200) NOT NULL DEFAULT '',
+  tax_rate varchar(8) NOT NULL DEFAULT '',
+  tax_rate_name varchar(200) NOT NULL DEFAULT '',
+  tax_rate_priority bigint(20) unsigned NOT NULL,
+  tax_rate_compound int(1) NOT NULL DEFAULT 0,
+  tax_rate_shipping int(1) NOT NULL DEFAULT 1,
+  tax_rate_order bigint(20) unsigned NOT NULL,
+  tax_rate_class varchar(200) NOT NULL DEFAULT '',
+  PRIMARY KEY  (tax_rate_id),
+  KEY tax_rate_country (tax_rate_country),
+  KEY tax_rate_state (tax_rate_state(2)),
+  KEY tax_rate_class (tax_rate_class(10)),
+  KEY tax_rate_priority (tax_rate_priority)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables, dbDelta
+[02-Nov-2025 23:10:35 UTC] WordPress database error Table 'wp_woocommerce_tax_rate_locations' already exists for query 
+CREATE TABLE wp_woocommerce_tax_rate_locations (
+  location_id bigint(20) unsigned NOT NULL auto_increment,
+  location_code varchar(200) NOT NULL,
+  tax_rate_id bigint(20) unsigned NOT NULL,
+  location_type varchar(40) NOT NULL,
+  PRIMARY KEY  (location_id),
+  KEY tax_rate_id (tax_rate_id),
+  KEY location_type_code (location_type(10),location_code(20))
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables, dbDelta
+[02-Nov-2025 23:10:37 UTC] WordPress database error Table 'wp_woocommerce_shipping_zones' already exists for query 
+CREATE TABLE wp_woocommerce_shipping_zones (
+  zone_id bigint(20) unsigned NOT NULL auto_increment,
+  zone_name varchar(200) NOT NULL,
+  zone_order bigint(20) unsigned NOT NULL,
+  PRIMARY KEY  (zone_id)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables, dbDelta
+[02-Nov-2025 23:10:38 UTC] WordPress database error Table 'wp_woocommerce_shipping_zone_locations' already exists for query 
+CREATE TABLE wp_woocommerce_shipping_zone_locations (
+  location_id bigint(20) unsigned NOT NULL auto_increment,
+  zone_id bigint(20) unsigned NOT NULL,
+  location_code varchar(200) NOT NULL,
+  location_type varchar(40) NOT NULL,
+  PRIMARY KEY  (location_id),
+  KEY zone_id (zone_id),
+  KEY location_type_code (location_type(10),location_code(20))
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables, dbDelta
+[02-Nov-2025 23:10:42 UTC] WordPress database error Table 'wp_woocommerce_shipping_zone_methods' already exists for query 
+CREATE TABLE wp_woocommerce_shipping_zone_methods (
+  zone_id bigint(20) unsigned NOT NULL,
+  instance_id bigint(20) unsigned NOT NULL auto_increment,
+  method_id varchar(200) NOT NULL,
+  method_order bigint(20) unsigned NOT NULL,
+  is_enabled tinyint(1) NOT NULL DEFAULT '1',
+  PRIMARY KEY  (instance_id)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables, dbDelta
+[02-Nov-2025 23:10:43 UTC] WordPress database error Table 'wp_woocommerce_payment_tokens' already exists for query 
+CREATE TABLE wp_woocommerce_payment_tokens (
+  token_id bigint(20) unsigned NOT NULL auto_increment,
+  gateway_id varchar(200) NOT NULL,
+  token text NOT NULL,
+  user_id bigint(20) unsigned NOT NULL DEFAULT '0',
+  type varchar(200) NOT NULL,
+  is_default tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY  (token_id),
+  KEY user_id (user_id)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables, dbDelta
+[02-Nov-2025 23:10:45 UTC] WordPress database error Table 'wp_woocommerce_payment_tokenmeta' already exists for query 
+CREATE TABLE wp_woocommerce_payment_tokenmeta (
+  meta_id bigint(20) unsigned NOT NULL auto_increment,
+  payment_token_id bigint(20) unsigned NOT NULL,
+  meta_key varchar(255) NULL,
+  meta_value longtext NULL,
+  PRIMARY KEY  (meta_id),
+  KEY payment_token_id (payment_token_id),
+  KEY meta_key (meta_key(32))
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables, dbDelta
+[02-Nov-2025 23:10:48 UTC] WordPress database error Table 'wp_woocommerce_log' already exists for query 
+CREATE TABLE wp_woocommerce_log (
+  log_id bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  timestamp datetime NOT NULL,
+  level smallint(4) NOT NULL,
+  source varchar(200) NOT NULL,
+  message longtext NOT NULL,
+  context longtext NULL,
+  PRIMARY KEY (log_id),
+  KEY level (level)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables, dbDelta
+[02-Nov-2025 23:10:50 UTC] WordPress database error Table 'wp_wc_webhooks' already exists for query 
+CREATE TABLE wp_wc_webhooks (
+  webhook_id bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  status varchar(200) NOT NULL,
+  name text NOT NULL,
+  user_id bigint(20) unsigned NOT NULL,
+  delivery_url text NOT NULL,
+  secret text NOT NULL,
+  topic varchar(200) NOT NULL,
+  date_created datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  date_created_gmt datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  date_modified datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  date_modified_gmt datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  api_version smallint(4) NOT NULL,
+  failure_count smallint(10) NOT NULL DEFAULT '0',
+  pending_delivery tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY  (webhook_id),
+  KEY user_id (user_id)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables, dbDelta
+[02-Nov-2025 23:10:51 UTC] WordPress database error Table 'wp_wc_download_log' already exists for query 
+CREATE TABLE wp_wc_download_log (
+  download_log_id bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  timestamp datetime NOT NULL,
+  permission_id bigint(20) unsigned NOT NULL,
+  user_id bigint(20) unsigned NULL,
+  user_ip_address varchar(100) NULL DEFAULT '',
+  PRIMARY KEY  (download_log_id),
+  KEY permission_id (permission_id),
+  KEY timestamp (timestamp)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables, dbDelta
+[02-Nov-2025 23:10:54 UTC] WordPress database error Table 'wp_wc_product_meta_lookup' already exists for query 
+CREATE TABLE wp_wc_product_meta_lookup (
+  `product_id` bigint(20) NOT NULL,
+  `sku` varchar(100) NULL default '',
+  `global_unique_id` varchar(100) NULL default '',
+  `virtual` tinyint(1) NULL default 0,
+  `downloadable` tinyint(1) NULL default 0,
+  `min_price` decimal(19,4) NULL default NULL,
+  `max_price` decimal(19,4) NULL default NULL,
+  `onsale` tinyint(1) NULL default 0,
+  `stock_quantity` double NULL default NULL,
+  `stock_status` varchar(100) NULL default 'instock',
+  `rating_count` bigint(20) NULL default 0,
+  `average_rating` decimal(3,2) NULL default 0.00,
+  `total_sales` bigint(20) NULL default 0,
+  `tax_status` varchar(100) NULL default 'taxable',
+  `tax_class` varchar(100) NULL default '',
+  PRIMARY KEY  (`product_id`),
+  KEY `virtual` (`virtual`),
+  KEY `downloadable` (`downloadable`),
+  KEY `stock_status` (`stock_status`),
+  KEY `stock_quantity` (`stock_quantity`),
+  KEY `onsale` (`onsale`),
+  KEY min_max_price (`min_price`, `max_price`),
+  KEY sku (sku(50))
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables, dbDelta
+[02-Nov-2025 23:10:58 UTC] WordPress database error Table 'wp_wc_tax_rate_classes' already exists for query 
+CREATE TABLE wp_wc_tax_rate_classes (
+  tax_rate_class_id bigint(20) unsigned NOT NULL auto_increment,
+  name varchar(200) NOT NULL DEFAULT '',
+  slug varchar(200) NOT NULL DEFAULT '',
+  PRIMARY KEY  (tax_rate_class_id),
+  UNIQUE KEY slug (slug(191))
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables, dbDelta
+[02-Nov-2025 23:10:59 UTC] WordPress database error Table 'wp_wc_reserved_stock' already exists for query 
+CREATE TABLE wp_wc_reserved_stock (
+	`order_id` bigint(20) NOT NULL,
+	`product_id` bigint(20) NOT NULL,
+	`stock_quantity` double NOT NULL DEFAULT 0,
+	`timestamp` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+	`expires` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+	PRIMARY KEY  (`order_id`, `product_id`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables, dbDelta
+[02-Nov-2025 23:11:01 UTC] WordPress database error Table 'wp_wc_rate_limits' already exists for query 
+CREATE TABLE wp_wc_rate_limits (
+  rate_limit_id bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  rate_limit_key varchar(200) NOT NULL,
+  rate_limit_expiry bigint(20) unsigned NOT NULL,
+  rate_limit_remaining smallint(10) NOT NULL DEFAULT '0',
+  PRIMARY KEY  (rate_limit_id),
+  UNIQUE KEY rate_limit_key (rate_limit_key(191))
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables, dbDelta
+[02-Nov-2025 23:11:03 UTC] WordPress database error Table 'wp_wc_product_attributes_lookup' already exists for query 
+CREATE TABLE wp_wc_product_attributes_lookup (
+ product_id bigint(20) NOT NULL,
+ product_or_parent_id bigint(20) NOT NULL,
+ taxonomy varchar(32) NOT NULL,
+ term_id bigint(20) NOT NULL,
+ is_variation_attribute tinyint(1) NOT NULL,
+ in_stock tinyint(1) NOT NULL,
+ INDEX is_variation_attribute_term_id (is_variation_attribute, term_id),
+ PRIMARY KEY  ( `product_or_parent_id`, `term_id`, `product_id`, `taxonomy` )
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables, dbDelta
+[02-Nov-2025 23:11:04 UTC] WordPress database error Table 'wp_wc_product_download_directories' already exists for query 
+CREATE TABLE wp_wc_product_download_directories (
+	url_id bigint(20) unsigned NOT NULL auto_increment,
+	url varchar(256) NOT NULL,
+	enabled tinyint(1) NOT NULL DEFAULT 0,
+	PRIMARY KEY (url_id),
+	KEY url (url(191))
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables, dbDelta
+[02-Nov-2025 23:11:06 UTC] WordPress database error Table 'wp_wc_order_stats' already exists for query 
+CREATE TABLE wp_wc_order_stats (
+	order_id bigint(20) unsigned NOT NULL,
+	parent_id bigint(20) unsigned DEFAULT 0 NOT NULL,
+	date_created datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+	date_created_gmt datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+	date_paid datetime DEFAULT '0000-00-00 00:00:00',
+	date_completed datetime DEFAULT '0000-00-00 00:00:00',
+	num_items_sold int(11) DEFAULT 0 NOT NULL,
+	total_sales double DEFAULT 0 NOT NULL,
+	tax_total double DEFAULT 0 NOT NULL,
+	shipping_total double DEFAULT 0 NOT NULL,
+	net_total double DEFAULT 0 NOT NULL,
+	returning_customer tinyint(1) DEFAULT NULL,
+	status varchar(20) NOT NULL,
+	customer_id bigint(20) unsigned NOT NULL,
+	PRIMARY KEY (order_id),
+	KEY date_created (date_created),
+	KEY customer_id (customer_id),
+	KEY status (status)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables, dbDelta
+[02-Nov-2025 23:11:10 UTC] WordPress database error Table 'wp_wc_order_product_lookup' already exists for query 
+CREATE TABLE wp_wc_order_product_lookup (
+	order_item_id bigint(20) unsigned NOT NULL,
+	order_id bigint(20) unsigned NOT NULL,
+	product_id bigint(20) unsigned NOT NULL,
+	variation_id bigint(20) unsigned NOT NULL,
+	customer_id bigint(20) unsigned NULL,
+	date_created datetime DEFAULT CURRENT_TIMESTAMP NOT NULL,
+	product_qty int(11) NOT NULL,
+	product_net_revenue double DEFAULT 0 NOT NULL,
+	product_gross_revenue double DEFAULT 0 NOT NULL,
+	coupon_amount double DEFAULT 0 NOT NULL,
+	tax_amount double DEFAULT 0 NOT NULL,
+	shipping_amount double DEFAULT 0 NOT NULL,
+	shipping_tax_amount double DEFAULT 0 NOT NULL,
+	PRIMARY KEY  (order_item_id, order_id),
+	KEY order_id (order_id),
+	KEY product_id (product_id),
+	KEY customer_id (customer_id),
+	KEY date_created (date_created),
+	KEY customer_product_date (customer_id, product_id, date_created)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables, dbDelta
+[02-Nov-2025 23:11:12 UTC] WordPress database error Table 'wp_wc_order_tax_lookup' already exists for query 
+CREATE TABLE wp_wc_order_tax_lookup (
+	order_id bigint(20) unsigned NOT NULL,
+	tax_rate_id bigint(20) unsigned NOT NULL,
+	date_created datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+	shipping_tax double DEFAULT 0 NOT NULL,
+	order_tax double DEFAULT 0 NOT NULL,
+	total_tax double DEFAULT 0 NOT NULL,
+	PRIMARY KEY (order_id, tax_rate_id),
+	KEY tax_rate_id (tax_rate_id),
+	KEY date_created (date_created)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables, dbDelta
+[02-Nov-2025 23:11:14 UTC] WordPress database error Table 'wp_wc_order_coupon_lookup' already exists for query 
+CREATE TABLE wp_wc_order_coupon_lookup (
+	order_id bigint(20) unsigned NOT NULL,
+	coupon_id bigint(20) NOT NULL,
+	date_created datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+	discount_amount double DEFAULT 0 NOT NULL,
+	PRIMARY KEY (order_id, coupon_id),
+	KEY coupon_id (coupon_id),
+	KEY date_created (date_created)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables, dbDelta
+[02-Nov-2025 23:11:16 UTC] WordPress database error Table 'wp_wc_admin_notes' already exists for query 
+CREATE TABLE wp_wc_admin_notes (
+	note_id bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+	name varchar(255) NOT NULL,
+	type varchar(20) NOT NULL,
+	locale varchar(20) NOT NULL,
+	title longtext NOT NULL,
+	content longtext NOT NULL,
+	content_data longtext NULL default null,
+	status varchar(200) NOT NULL,
+	source varchar(200) NOT NULL,
+	date_created datetime NOT NULL default '0000-00-00 00:00:00',
+	date_reminder datetime NULL default null,
+	is_snoozable tinyint(1) DEFAULT 0 NOT NULL,
+	layout varchar(20) DEFAULT '' NOT NULL,
+	image varchar(200) NULL DEFAULT NULL,
+	is_deleted tinyint(1) DEFAULT 0 NOT NULL,
+	is_read tinyint(1) DEFAULT 0 NOT NULL,
+	icon varchar(200) NOT NULL default 'info',
+	PRIMARY KEY (note_id)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables, dbDelta
+[02-Nov-2025 23:11:18 UTC] WordPress database error Table 'wp_wc_admin_note_actions' already exists for query 
+CREATE TABLE wp_wc_admin_note_actions (
+	action_id bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+	note_id bigint(20) unsigned NOT NULL,
+	name varchar(255) NOT NULL,
+	label varchar(255) NOT NULL,
+	query longtext NOT NULL,
+	status varchar(255) NOT NULL,
+	actioned_text varchar(255) NOT NULL,
+	nonce_action varchar(255) NULL DEFAULT NULL,
+	nonce_name varchar(255) NULL DEFAULT NULL,
+	PRIMARY KEY (action_id),
+	KEY note_id (note_id)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables, dbDelta
+[02-Nov-2025 23:11:22 UTC] WordPress database error Table 'wp_wc_customer_lookup' already exists for query 
+CREATE TABLE wp_wc_customer_lookup (
+	customer_id bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+	user_id bigint(20) unsigned DEFAULT NULL,
+	username varchar(60) DEFAULT '' NOT NULL,
+	first_name varchar(255) NOT NULL,
+	last_name varchar(255) NOT NULL,
+	email varchar(100) NULL default NULL,
+	date_last_active timestamp NULL default null,
+	date_registered timestamp NULL default null,
+	country char(2) DEFAULT '' NOT NULL,
+	postcode varchar(20) DEFAULT '' NOT NULL,
+	city varchar(100) DEFAULT '' NOT NULL,
+	state varchar(100) DEFAULT '' NOT NULL,
+	PRIMARY KEY (customer_id),
+	UNIQUE KEY user_id (user_id),
+	KEY email (email)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables, dbDelta
+[02-Nov-2025 23:11:23 UTC] WordPress database error Table 'wp_wc_category_lookup' already exists for query 
+CREATE TABLE wp_wc_category_lookup (
+	category_tree_id bigint(20) unsigned NOT NULL,
+	category_id bigint(20) unsigned NOT NULL,
+	PRIMARY KEY (category_tree_id,category_id)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables, dbDelta
+[02-Nov-2025 23:11:26 UTC] WordPress database error Duplicate key name 'woo_idx_comment_type' for query ALTER TABLE wp_comments ADD INDEX woo_idx_comment_type (comment_type) made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables
+[02-Nov-2025 23:11:28 UTC] WordPress database error Duplicate key name 'woo_idx_comment_date_type' for query ALTER TABLE wp_comments ADD INDEX woo_idx_comment_date_type (comment_date_gmt, comment_type, comment_approved, comment_post_ID) made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_tables
+[02-Nov-2025 23:12:27 UTC] WordPress database error Duplicate entry 'reduced-rate' for key 'wp_wc_tax_rate_classes.slug' for query INSERT INTO `wp_wc_tax_rate_classes` (`name`, `slug`) VALUES ('Reduced rate', 'reduced-rate') made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_options, WC_Tax::create_tax_class
+[02-Nov-2025 23:12:27 UTC] WordPress database error Duplicate entry 'zero-rate' for key 'wp_wc_tax_rate_classes.slug' for query INSERT INTO `wp_wc_tax_rate_classes` (`name`, `slug`) VALUES ('Zero rate', 'zero-rate') made by activate_plugin, do_action('activate_woocommerce/woocommerce.php'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Install::install, WC_Install::install_core, WC_Install::create_options, WC_Tax::create_tax_class
+[02-Nov-2025 23:13:23 UTC] WordPress database error Duplicate entry 'action_scheduler_lock_async-request-runner' for key 'wp_options.option_name' for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('action_scheduler_lock_async-request-runner', '6907e59353a6e4.21127906|1762125263', 'no') made by shutdown_action_hook, do_action('shutdown'), WP_Hook->do_action, WP_Hook->apply_filters, ActionScheduler_QueueRunner->maybe_dispatch_async_request, ActionScheduler_OptionLock->set
+[02-Nov-2025 23:31:28 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-includes\class-wpdb.php on line 2351
+[02-Nov-2025 23:31:30 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-admin\includes\class-wp-filesystem-direct.php on line 529
+[02-Nov-2025 23:31:34 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query 
+INSERT INTO wp_actionscheduler_actions ( `hook`, `status`, `scheduled_date_gmt`, `scheduled_date_local`, `schedule`, `group_id`, `priority`, `args` )
+SELECT 'mailpoet/cron/daemon-trigger', 'pending', '2025-11-02 23:31:33', '2025-11-02 23:31:33', 'O:32:\"ActionScheduler_IntervalSchedule\":5:{s:22:\"\0*\0scheduled_timestamp\";i:1762126293;s:18:\"\0*\0first_timestamp\";i:1762126293;s:13:\"\0*\0recurrence\";i:120;s:49:\"\0ActionScheduler_IntervalSchedule\0start_timestamp\";i:1762126293;s:53:\"\0ActionScheduler_IntervalSchedule\0interval_in_seconds\";i:120;}', 10, 10, '[]' FROM DUAL
+WHERE ( 
+SELECT action_id FROM wp_actionscheduler_actions
+WHERE status IN ( 'pending', 'in-progress' )
+AND hook = 'mailpoet/cron/daemon-trigger'
+AND `group_id` = 10
+ LIMIT 1 ) IS NULL made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, MailPoet\Config\Initializer->initialize, MailPoet\Config\Initializer->setupCronTrigger, MailPoet\Cron\CronTrigger->init, MailPoet\Cron\DaemonActionSchedulerRunner->init, MailPoet\Cron\ActionScheduler\Actions\DaemonTrigger->init, MailPoet\Cron\ActionScheduler\ActionScheduler->scheduleRecurringAction, as_schedule_recurring_action, ActionScheduler_ActionFactory->create, ActionScheduler_ActionFactory->store_unique_action, ActionScheduler_DBStore->save_unique_action, ActionScheduler_DBStore->save_action_to_db
+[02-Nov-2025 23:31:46 UTC] WordPress database error Table 'local.wp_gla_ads_recommendations' doesn't exist for query SELECT * FROM `wp_gla_ads_recommendations`
+WHERE
+recommendation_type = 'IMPROVE_PERFORMANCE_MAX_AD_STRENGTH' made by require('wp-admin/menu.php'), require_once('wp-admin/includes/menu.php'), do_action('admin_menu'), WP_Hook->do_action, WP_Hook->apply_filters, Automattic\WooCommerce\GoogleListingsAndAds\Menu\NotificationManager->display_aggregated_notification_pill, Automattic\WooCommerce\GoogleListingsAndAds\Menu\NotificationManager->initial_notification_count, Automattic\WooCommerce\GoogleListingsAndAds\Ads\AdsRecommendationsService->get_recommendations, Automattic\WooCommerce\GoogleListingsAndAds\DB\Query->get_results, Automattic\WooCommerce\GoogleListingsAndAds\DB\Query->query_results
+[02-Nov-2025 23:32:38 UTC] PHP Warning:  Undefined array key "source_url" in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-content\plugins\woocommerce\src\Internal\Admin\Marketing\MarketingSpecs.php on line 78
+[03-Nov-2025 00:22:22 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[03-Nov-2025 01:32:26 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[13-Nov-2025 14:31:17 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[13-Nov-2025 15:18:51 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[13-Nov-2025 22:17:09 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[14-Nov-2025 22:57:14 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[15-Nov-2025 12:01:30 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[15-Nov-2025 21:23:40 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[15-Nov-2025 21:23:40 UTC] Cron unschedule event error for hook: action_scheduler_run_queue, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[15-Nov-2025 21:27:36 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[15-Nov-2025 21:27:36 UTC] Cron unschedule event error for hook: action_scheduler_run_queue, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[16-Nov-2025 20:24:43 UTC] Erreur d’événement de replanification de tâche pour le crochet action_scheduler_run_queue. Code d’erreur : could_not_set. Message d’erreur : La liste des évènements planifiés n’a pas pu être sauvegardée.. Données : {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[17-Nov-2025 15:02:17 UTC] PHP Warning:  Undefined array key "queryId" in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-content\plugins\woocommerce\src\Blocks\BlockTypes\ProductCollection\Controller.php on line 160
+[17-Nov-2025 15:02:17 UTC] PHP Warning:  Undefined array key "queryId" in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-content\plugins\woocommerce\src\Blocks\BlockTypes\ProductCollection\Controller.php on line 182
+[17-Nov-2025 15:02:17 UTC] PHP Warning:  Undefined array key "queryId" in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-content\plugins\woocommerce\src\Blocks\BlockTypes\ProductCollection\Renderer.php on line 153
+[17-Nov-2025 15:42:14 UTC] PHP Warning:  Undefined array key "queryId" in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-content\plugins\woocommerce\src\Blocks\BlockTypes\ProductCollection\Controller.php on line 160
+[17-Nov-2025 15:42:14 UTC] PHP Warning:  Undefined array key "queryId" in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-content\plugins\woocommerce\src\Blocks\BlockTypes\ProductCollection\Controller.php on line 182
+[17-Nov-2025 15:42:14 UTC] PHP Warning:  Undefined array key "queryId" in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-content\plugins\woocommerce\src\Blocks\BlockTypes\ProductCollection\Renderer.php on line 153
+[17-Nov-2025 19:24:56 UTC] Erreur d’événement de replanification de tâche pour le crochet action_scheduler_run_queue. Code d’erreur : could_not_set. Message d’erreur : La liste des évènements planifiés n’a pas pu être sauvegardée.. Données : {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[17-Nov-2025 20:34:04 UTC] Erreur d’événement de replanification de tâche pour le crochet action_scheduler_run_queue. Code d’erreur : could_not_set. Message d’erreur : La liste des évènements planifiés n’a pas pu être sauvegardée.. Données : {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[17-Nov-2025 22:54:29 UTC] Erreur d’événement de replanification de tâche pour le crochet action_scheduler_run_queue. Code d’erreur : could_not_set. Message d’erreur : La liste des évènements planifiés n’a pas pu être sauvegardée.. Données : {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[18-Nov-2025 11:13:37 UTC] Erreur d’événement de replanification de tâche pour le crochet action_scheduler_run_queue. Code d’erreur : could_not_set. Message d’erreur : La liste des évènements planifiés n’a pas pu être sauvegardée.. Données : {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[18-Nov-2025 11:13:37 UTC] Erreur d’événement de replanification de tâche pour le crochet wc_admin_process_orders_milestone. Code d’erreur : could_not_set. Message d’erreur : La liste des évènements planifiés n’a pas pu être sauvegardée.. Données : {"schedule":"hourly","args":[],"interval":3600}
+[18-Nov-2025 14:36:08 UTC] PHP Warning:  include(C:\Users\DELL\Local Sites\dolidol2\app\public/wp-content/languages/plugins/jetpack-fr_FR.l10n.php): Failed to open stream: No such file or directory in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-includes\l10n.php on line 1608
+[18-Nov-2025 14:36:08 UTC] PHP Warning:  include(): Failed opening 'C:\Users\DELL\Local Sites\dolidol2\app\public/wp-content/languages/plugins/jetpack-fr_FR.l10n.php' for inclusion (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-includes\l10n.php on line 1608
+[18-Nov-2025 14:36:08 UTC] PHP Warning:  include(C:\Users\DELL\Local Sites\dolidol2\app\public/wp-content/languages/plugins/jetpack-fr_FR.l10n.php): Failed to open stream: No such file or directory in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-includes\l10n.php on line 1608
+[18-Nov-2025 14:36:08 UTC] PHP Warning:  include(): Failed opening 'C:\Users\DELL\Local Sites\dolidol2\app\public/wp-content/languages/plugins/jetpack-fr_FR.l10n.php' for inclusion (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\DELL\Local Sites\dolidol2\app\public\wp-includes\l10n.php on line 1608
